@@ -11,76 +11,74 @@ body {
   height: 100vh;
   width: 6vw;
   background-color: #0f0f0f;
+  color: white;
+  padding-top: 20px;
   position: fixed;
   z-index: 9999;
-  color: white;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding-top: 20px;
   gap: 24px;
 }
-.sidebar .option-1 {
+.sidebar .option {
   display: flex;
   flex-direction: column;
-  font-size: 10px;
+  justify-content: center;
   align-items: center;
   gap: 4px;
+  font-size: 10px;
 }
-
 .header {
-  height: 16vh;
-  width: 100%;
   background-color: #0f0f0f;
-  position: fixed;
   color: white;
+  height: 20vh;
+  width: 100%;
   padding-left: 100px;
+  padding-top: 20px;
+  position: fixed;
 }
 .header-top {
-  padding: 16px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: white;
+  padding-right: 20px;
 }
 .header-middle {
   display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
+  border-radius: 10px;
 }
 .header-middle input {
   width: 400px;
-  background-color: #0f0f0f;
-  padding: 8px;
-  border: 1px solid #5f5f5f;
   border-radius: 20px;
+  background-color: #0f0f0f;
+  border: 2px solid #5f5f5f;
+  padding: 8px;
 }
 .header-middle .mic {
-  border-radius: 50%;
+  background-color: #313131;
   height: 40px;
   width: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
-  background-color: #313131;
+  border-radius: 50%;
 }
-.header-right {
+.header-left {
   display: flex;
-  align-items: center;
-  gap: 40px;
-}
-.header-right .create {
-  background-color: #313131;
-  height: 36px;
-  width: 100px;
-  display: flex;
-  align-items: center;
   justify-content: center;
-
-  border-radius: 20px;
+  align-items: center;
+  gap: 20px;
 }
-.header-right .cont-s {
-  background-color: palevioletred;
+.header-left .create {
+  background-color: #313131;
+  padding: 8px;
+  border-radius: 40px;
+}
+.header-left .s {
+  background-color: rgb(248, 69, 98);
   height: 40px;
   width: 40px;
   display: flex;
@@ -89,74 +87,114 @@ body {
   border-radius: 50%;
 }
 .header-down {
+  padding-top: 20px;
   padding-left: 40px;
 }
 .header-down ul {
-  color: white;
   display: flex;
-  list-style: none;
   gap: 10px;
+  list-style: none;
   overflow: auto;
 }
-
 .header-down ul::-webkit-scrollbar {
   display: none;
 }
 .header-down ul li {
   background-color: #313131;
-  border-radius: 8px;
   padding: 4px 10px;
+  border-radius: 10px;
   font-size: 14px;
   flex-shrink: 0;
 }
 .container {
-  height: 200vh;
   background-color: #0f0f0f;
   color: white;
-  display: flex;
-  justify-content: space-between;
-}
-.videos-wrapper {
-  padding-left: 120px;
   padding-top: 20vh;
-  padding-right: 40px;
+  padding-left: 6vw;
+  border: 2px solid black;
+}
+.video-wrapper {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
-  width: 2000px;
+  padding-left: 40px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  gap: 15px;
 }
 .video-card {
+  width: 344px;
+}
+.video-img {
   width: 100%;
 }
-
-.vid-info {
+.video-img img {
+  width: 100%;
+  border-radius: 12px;
+}
+.video-info {
   display: flex;
-
   gap: 10px;
 }
-.info-left img {
+.video-left img {
+  height: 36px;
+  width: 36px;
   border-radius: 50%;
-  height: 40px;
-  width: 40px;
 }
-.info-right {
+.video-right {
   display: flex;
   flex-direction: column;
-  gap: 6px;
-  padding-right: 20px;
+  gap: 4px;
 }
-.vid-img img {
-  border-radius: 16px;
-  width: 100%;
-}
-.channel-name {
+.para-1 {
   font-weight: bold;
 }
-.channel-detail {
-  font-size: 14px;
+.para-2 {
   color: #aaa;
+  font-size: 14px;
 }
-.channel-class {
-  font-size: 14px;
+.short-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 20px;
+  padding-top: 20px;
+  font-weight: bold;
+}
+.short-left .para-3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 24px;
+}
+.short-right {
+  display: flex;
+  flex-direction: column;
+  line-height: 6px;
+}
+.short-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  gap: 10px;
+}
+.short-card {
+  width: 244px;
+}
+.short-card img {
+  width: 100%;
+  border-radius: 12px;
+}
+.para-4 {
+  font-weight: bold;
+  padding: 10px 0;
+}
+.para-5 {
   color: #aaa;
+  font-size: 14px;
 }
